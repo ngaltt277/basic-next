@@ -1,0 +1,29 @@
+.input {
+  .input-container {
+    @apply relative h-[40px] border-2 border-[#ccc] py-2 px-[10px];
+
+    &.invalid {
+      @apply border-red-600;
+    }
+
+    .input-label {
+      @apply absolute z-[1];
+    }
+
+    &.has_label {
+      @apply h-[60px];
+    }
+  }
+
+  input {
+    @apply text-base border-none font-semibold w-full h-full absolute top-0 left-0 px-[10px];
+
+    &.has_label {
+      @apply pt-6;
+    }
+  }
+
+  .input-error {
+    @apply text-red-600 animate-[slideInUp_0.3s_ease] inline-block;
+  }
+}

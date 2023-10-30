@@ -1,0 +1,23 @@
+.nav {
+  @apply flex py-5 px-14 bg-slate-500 justify-between sticky top-0 left-0 z-10;
+
+  .nav-left {
+    @apply flex gap-8;
+  }
+
+  .nav-item {
+    @apply text-white font-normal hover:underline hover:text-white;
+
+    &.active {
+      @apply font-medium;
+    }
+  }
+
+  button {
+    @apply m-0 p-0;
+  }
+}
+
+main {
+  @apply mx-14 my-4;
+}

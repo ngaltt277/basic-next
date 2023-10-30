@@ -1,0 +1,17 @@
+.checkbox-group {
+  @apply flex gap-[30px] mt-[6px] flex-wrap;
+}
+
+.checkbox {
+  .checkbox-container {
+    @apply flex items-center;
+
+    input {
+      @apply w-[18px] h-[18px] mr-2 accent-blue-700;
+    }
+
+    .label-checkbox {
+      @apply font-semibold text-base;
+    }
+  }
+}

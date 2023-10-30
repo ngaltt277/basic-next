@@ -1,0 +1,29 @@
+.passport {
+  @apply animate-[slideInLeft_.3s_ease];
+
+  .passport-header {
+    h2 {
+      @apply text-blue-600 uppercase m-0 mb-2;
+    }
+  }
+
+  .passport-form {
+    @apply flex flex-col gap-3;
+
+    .form-section {
+      @apply flex flex-col gap-1;
+
+      .sub-title {
+        @apply text-blue-600 m-0 mb-[10px] font-medium;
+
+        &.required {
+          @apply after:content-['*'] after:ml-1 after:text-red-400;
+        }
+      }
+    }
+
+    .form-footer {
+      @apply flex justify-end;
+    }
+  }
+}

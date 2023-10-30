@@ -1,0 +1,27 @@
+.retro-mileage-claim {
+  @apply animate-[slideInLeft_.3s_ease];
+
+  .header {
+    @apply text-blue-600 uppercase;
+  }
+
+  form {
+    @apply m-0 p-0 flex flex-col gap-5 mb-5;
+  }
+
+  .form-section-title {
+    @apply text-blue-600 text-base font-medium mb-2;
+  }
+
+  .optional {
+    @apply ml-[6px] font-normal text-blue-600;
+  }
+
+  .form-section-content {
+    @apply ml-4 flex flex-col gap-4;
+  }
+
+  .form-footer {
+    @apply flex justify-end;
+  }
+}

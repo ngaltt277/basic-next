@@ -1,0 +1,23 @@
+.radio-group {
+  .radio {
+    @apply flex items-center my-0 mx-4 flex-wrap gap-8;
+
+    .radio-input {
+      @apply flex items-center;
+
+      input {
+        &:optional {
+          @apply p-0 m-0 accent-blue-700;
+        }
+      }
+
+      .radio-label {
+        @apply text-base font-semibold ml-[6px];
+      }
+    }
+  }
+
+  .radio-error {
+    @apply text-red-600 text-sm my-[6px] mx-4;
+  }
+}

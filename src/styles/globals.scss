@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-xl font-medium mb-2 text-blue-600;
+  }
+
+  label {
+    @apply text-sm;
+  }
+
+  a {
+    @apply text-blue-500 hover:underline hover:text-blue-600;
+  }
+
+  hr {
+    @apply mb-2;
+  }
+}
+
+@layer components {
+  @import "./base/key-frames.scss";
+  @import "./components/form/button.scss";
+  @import "./components/form/input.scss";
+  @import "./components/form/select.scss";
+  @import "./components/form/checkbox.scss";
+  @import "./components/form/radio.scss";
+  @import "./components/layouts/main-layout.scss";
+  @import "./pages/login-page.scss";
+  @import "./pages/passport-page.scss";
+  @import "./pages/retro-mileage-claim.scss";
+  @import "./pages/add-to-cart.scss";
+}

@@ -1,0 +1,25 @@
+.add-to-cart {
+  @apply my-[30px] mx-[50px] flex justify-center items-center flex-col;
+
+  .carts-form {
+    @apply w-1/2 flex flex-col gap-3;
+  }
+
+  .form-footer {
+    @apply flex gap-[10px] justify-end;
+
+    button {
+      @apply last:bg-green-600 last:disabled:bg-gray-400;
+    }
+  }
+
+  input[type=number] {
+    @apply w-full;
+  }
+
+  .remove-button {
+    button {
+      @apply w-9 h-9 rounded-[50%] text-xl flex items-center justify-center;
+    }
+  }
+}
